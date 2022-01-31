@@ -1,0 +1,14 @@
+.header {
+  padding-top: 6rem;
+}
+
+.header__topline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 1;
+  max-width: 15rem;
+}

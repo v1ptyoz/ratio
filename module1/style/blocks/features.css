@@ -1,0 +1,30 @@
+.features__list {
+  margin-top: 100px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 165px;
+}
+
+@media screen and (max-width: 1054px) {
+  .features__list {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .features__list {
+    padding-left: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features__list {
+    padding-left: 0;
+  }
+}

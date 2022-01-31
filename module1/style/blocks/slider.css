@@ -1,0 +1,138 @@
+.slider {
+  position: relative;
+  flex: 1;
+}
+
+.slider__wrapper {
+  position: relative;
+}
+
+.slider__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slider__item {
+  border-radius: 20px;
+  border: 1px solid var(--purple);
+  width: 440px;
+  position: relative;
+  background: #ffffff;
+}
+
+.slider__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background: linear-gradient(270deg, #FFFFFF 9.75%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  z-index: -1;
+  background: #9663E0;
+  opacity: .1;
+}
+
+.slider__controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__dots {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.slider__dot {
+  cursor: pointer;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.slider__dot--active {
+  width: 10px;
+  height: 10px;
+  background: var(--pink);
+}
+
+.slider__arrows {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.slider__arrow {
+  cursor: pointer;
+  background: #ffffff;
+  width: 40px;
+  height: 2px;
+  position: relative;
+}
+
+.slider__arrow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -4px;
+  background: transparent;
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.slider__arrow--next {
+  width: 20px;
+  opacity: .5;
+}
+
+.slider__arrow--next::before {
+  transform: rotate(225deg);
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__dots {
+    gap: 15px;
+  }
+  .slider__dot {
+    width: 10px;
+    height: 10px;
+  }
+  .slider__dot--active {
+    width: 15px;
+    height: 15px;
+  }
+  .slider__arrows {
+    gap: 30px;
+  }
+}

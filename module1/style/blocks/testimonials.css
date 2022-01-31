@@ -1,0 +1,25 @@
+.testimonials {
+  height: 700px;
+  padding: 110px 94px 60px 94px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials h2 {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials {
+    height: 600px;
+    padding: 60px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testimonials {
+    height: 650px;
+  }
+}

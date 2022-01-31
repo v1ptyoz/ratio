@@ -1,0 +1,45 @@
+.hero {
+  margin-top: 14.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.hero__img {
+  max-width: 80%;
+  position: absolute;
+  bottom: -15px;
+  right: -110px;
+  z-index: -1;
+}
+
+.hero__img img {
+  object-fit: cover;
+}
+
+.hero h1 {
+  max-width: 64.5rem;
+  line-height: 110%;
+}
+
+.hero p {
+  max-width: 34rem;
+  line-height: 160%;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    align-items: center;
+  }
+  .hero h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__img {
+    display: none;
+  }
+}

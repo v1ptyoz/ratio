@@ -1,0 +1,15 @@
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.nav__link--active {
+  font-weight: bold;
+}

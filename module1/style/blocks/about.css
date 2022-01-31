@@ -1,0 +1,34 @@
+.about {
+  margin-top: 100px;
+  padding: 85px 0 85px 15px;
+}
+
+.about__wrapper {
+  padding-right: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+
+.about__img {
+  width: 400px;
+}
+
+.about__img img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 935px) {
+  .about__img {
+    width: 200px;
+  }
+  .about__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 15px;
+  }
+  .about p {
+    text-align: center;
+  }
+}

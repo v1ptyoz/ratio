@@ -1,0 +1,52 @@
+:root {
+  --header-color: #212353;
+  --text-color: #4B5D68;
+  --purple: #9C69E2;
+  --pink: #EF61B7;
+  --green: #68C9BA;
+  --blue: #2D9CDB;
+  --light-green: #F0FAFB;
+  --light-purple: #F5F0FC;
+  --light-pink: #FEEFF8;
+  --light-blue: #EAF5FB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  color: var(--text-color);
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--header-color);
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
